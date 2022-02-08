@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en page CSS div</title>
+<style>
+.surface{
+    background-color:lightgrey;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+.mauve{
+    background-color: #9931cc;
+    width: 300px;
+    height: 50px;
+    float:left;
+}
+.rouge{
+    background-color: #fe0000;
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+.gris{
+    background-color: #c0c0c0;
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+.orange{
+    background-color: #fea500;
+    width: 300px;
+    height: 100px;
+    float:left;
+}   
+.brique{
+    background-color: #f0807f;
+    width: 150px;
+    height: 50px;
+    float:left;
+}
+.lightblue{
+    background-color: #f1fff0;
+    width: 150px;
+    height: 50px;
+    float:left;
+}
+.jaune{
+    background-color: #ffff01;
+    width: 300px;
+    height: 50px;
+    float:left;
+}
+.vert{
+    background-color: #008001;
+    width: 600px;
+    height: 50px;
+    float:left;
+}
+.container{
+    display:flex;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 200px;
+    background-color: lightgrey;
+}
+.mauve_short{background-color: #9931cc}
+.rouge_short{background-color: #fe0000}
+.gris_short{background-color: #c0c0c0}
+.orange_short{background-color: #fea500}
+.brique_short{background-color: #f0807f}
+.lightblue_short{background-color: #f1fff0}
+.jaune_short{background-color: #ffff01}
+.vert_short{background-color: #008001}
+.w300{width: 300px !important}
+.w600{width: 600px !important}
+.h50{height: 50px !important;}
+.container div{
+    width: 150px;
+    height: 50px;
+}
+
+</style>
+<!-- L'idée est en fait de DRY et de définir un cas général auquel on appliquera différentes class d'exception -->
+
+</head>
+<body>
+    <div class="surface">
+        <div class="mauve">test</div>
+        <div class="rouge">a</div>
+        <div class="gris">b</div>
+        <div class="orange">1</div>
+        <div class="brique">2</div>
+        <div class="lightblue">3</div>
+        <div class="jaune">4</div>
+        <div class="vert">5</div>
+   </div>
+
+    <div class=h50></divclass></div>
+
+   <div class="container">
+        <div class="mauve_short w300">test</div>
+        <div class="rouge_short">a</div>
+        <div class="gris_short">b</div>
+        <div class="orange_short w300">1</div>
+        <div class="brique_short">2</div>
+        <div class="lightblue_short">3</div>
+        <div class="orange_short w300"></div>
+        <div class="jaune_short w300">4</div>
+        <div class="vert_short w600">5</div>        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* definir les couleurs */
+.mauve{background-color:#9931CC}
+.rouge{background-color:red}
+.gris{background-color:#C0C0C0}
+.orange{background-color:#FEA500}
+.rose{background-color:#F0807F}
+.blanc{background-color:F1FFF0;}
+.jaune{background-color:#FFFF01}
+.vert{background-color:#008001}
+/* methode DRY */
+/* Do not repeat Yourself */
+.container{
+    width:600px;
+    height:200px;
+}
+/* cas type */
+.container div{
+    width:150px;
+    height:50px;
+    float:left;
+    text-align:center;
+}
+.w300{width:300px!important}
+.w600{width:600px!important}
+.h100{height:100px!important}

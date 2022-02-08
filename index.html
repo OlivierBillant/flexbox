@@ -68,6 +68,19 @@
     height: 200px;
     background-color: lightgrey;
 }
+.container2{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 300px;
+    height: 100px;
+}
+.container div{
+    width: 150px;
+    height: 50px;
+}
+
 .mauve_short{background-color: #9931cc}
 .rouge_short{background-color: #fe0000}
 .gris_short{background-color: #c0c0c0}
@@ -78,11 +91,10 @@
 .vert_short{background-color: #008001}
 .w300{width: 300px !important}
 .w600{width: 600px !important}
-.h50{height: 50px !important;}
-.container div{
-    width: 150px;
-    height: 50px;
-}
+.h50{height: 50px !important}
+.h100{height: 100px !important}
+
+
 
 </style>
 <!-- L'idée est en fait de DRY et de définir un cas général auquel on appliquera différentes class d'exception -->
@@ -113,6 +125,21 @@
         <div class="jaune_short w300">4</div>
         <div class="vert_short w600">5</div>        
     </div>
+
+    <div class=h50></divclass></div>
+
+    <div class="container">
+         <div class="mauve_short w300">test</div>
+         <div class="rouge_short">a</div>
+         <div class="gris_short">b</div>
+         <div class="orange_short w300 h100">1</div>
+            <div class="container2">
+                <div class="brique_short">2</div>
+                <div class="lightblue_short">3</div>
+                <div class="jaune_short w300">4</div>
+            </div>
+         <div class="vert_short w600">5</div>        
+     </div>
 
 </body>
 </html>

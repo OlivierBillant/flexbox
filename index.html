@@ -74,6 +74,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
     width: 300px;
+    /* Mettre un ! sur la width du sous conteneur pour forcer sa tailler sinon utiliser growth */
     height: 100px;
 }
 .container div{
@@ -93,8 +94,6 @@
 .w600{width: 600px !important}
 .h50{height: 50px !important}
 .h100{height: 100px !important}
-
-
 
 </style>
 <!-- L'idée est en fait de DRY et de définir un cas général auquel on appliquera différentes class d'exception -->
